@@ -1,0 +1,81 @@
+body{
+    animation: 20000ms ease-in-out infinite color-change;
+    font-family: 'Cabin', sans-serif;
+    letter-spacing: -1px;
+}
+  
+@keyframes color-change{
+    0% {background-color: rgba(0, 128, 128, 0.7);}
+    20% {background-color: rgba(255, 217, 0, 0.7);}
+    40% {background-color: rgba(205, 92, 92, 0.7);}
+    60% {background-color: rgba(238, 130, 238, 0.7);}
+    80% {background-color: rgba(0, 128, 0, 0.7);}
+    100% {background-color: rgba(0, 128, 128, 0.7);}
+}
+
+.topbar{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.khulta{
+    border: 0px !important;
+    outline: none !important;
+    transform: rotate(360deg);
+    transition: transform 0.5s;
+}
+.khulta:active{
+    transform: rotate(180deg);
+    transition:  0s;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    backdrop-filter: saturate(0%) blur(5px);
+    /*backdrop-filter: saturate(180%) blur(5px);*/
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+  
+.sidenav .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+  
+@media screen and (max-height: 450px){
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.hero{
+    margin-top: 30px;
+}
+
+.steped{
+    margin-top: 10px;
+}
+
+.dabba{
+    box-shadow: 5px 5px 50px black;
+}
