@@ -22,6 +22,15 @@ body{
     z-index: 100;
 }
 
+
+.mazeme{
+    margin-top: 10px;
+    background-color: rgba(100, 100, 100, 0.4);
+    z-index: 100;
+}
+
+
+
 .khulta{
     border: 0px !important;
     outline: none !important;
